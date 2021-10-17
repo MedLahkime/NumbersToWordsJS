@@ -7,7 +7,7 @@ french = {
     }
   
 
-a = 553;
+
 function numbersToWords(num){
     if(num>999 && num<=9999)
         return convertQuadraDigit(num);
