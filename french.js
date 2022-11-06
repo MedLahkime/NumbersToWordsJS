@@ -64,7 +64,6 @@ function convertTripleDigit(num){
         let res = '';
         let a = (num-(num%100))/100;
         let b = num-a*100;
-        console.log(a + 'et' + b);
         if (a>1) res = convertSingleDigit(a) +' ';
         return res + 'cent ' + convertDoubleDigit(b);
     }
@@ -75,13 +74,8 @@ function convertQuadraDigit(num){
         let res = '';
         let a = (num-(num%1000))/1000;
         let b = num-a*1000;
-        console.log(a + 'et' + b);
         if (a>1) res = convertSingleDigit(a) +' ';
         return res + 'mille ' + convertTripleDigit(b);
     }
 }
 console.log(numbersToWords(7496));
-/*
-for (let i = 1000; i<1100; i++)
-    console.log(numbersToWords(i));
-    */
